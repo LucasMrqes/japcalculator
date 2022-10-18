@@ -25,6 +25,9 @@ jobs:
       # audit packages version:
       - run: npm audit --audit-level=critical
 
+      # run linter on all src files
+      - run: npx eslint src/
+
       # run tests!
       - run: npm run test
       - run: npm run build
