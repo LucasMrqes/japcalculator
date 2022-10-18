@@ -46,7 +46,7 @@ export const FoodTile: React.FC<Props> = (props: Props) => {
         <span className={classes.name}>{name}</span>
 
         <div className={classes.controls}>
-          <span className={classes.button} onClick={handleChange(1)}>
+          <span className={classes.button} onClick={handleChange(0)}>
             Reset
           </span>
           <span className={classes.button} onClick={handleChange(value - 1)}>
