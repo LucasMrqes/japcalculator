@@ -46,6 +46,7 @@ export const FoodTile: React.FC<Props> = (props: Props) => {
         <span className={classes.name}>{name}</span>
 
         <div className={classes.controls}>
+          <button className={classes.button} onClick={methodDoesNotExist}>Break the world</button>;
           <span className={classes.button} onClick={handleChange(0)}>
             Reset
           </span>
