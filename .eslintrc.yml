@@ -3,8 +3,7 @@ env:
   es2021: true
   node: true
 extends:
-  - plugin:react/recommended
-  - standard-with-typescript
+  - react-app
 overrides: []
 parserOptions:
   ecmaVersion: latest
