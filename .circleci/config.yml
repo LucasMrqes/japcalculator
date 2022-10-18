@@ -22,6 +22,9 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
+      # audit packages version:
+      - run: npm audit --audit-level=critical
+
       # run tests!
       - run: npm run test
       - run: npm run build
